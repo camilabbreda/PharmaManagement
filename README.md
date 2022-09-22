@@ -26,4 +26,7 @@ npm run server
 Sendo server um "script" do package.json:
 "server": "json-server data/db.json --port 3001"
 
+CHAVE MAP BOX:
+.env
+REACT_APP_ACCESS_TOKEN_MAPBOX=pk.eyJ1IjoiY2FtaWxhYmJyZWRhIiwiYSI6ImNsODNwMTYzcTAzaGUzdW9kNnRpZzVhdGsifQ.o__Ek9Nmh2otHj0O1FDW_Q
 
