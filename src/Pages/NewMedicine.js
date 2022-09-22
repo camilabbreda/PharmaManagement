@@ -42,7 +42,7 @@ export default function NewMedicine() {
             <HeaderNewMedicine>
                 <Link type="submit" className="btn btn-outline-success" to="/medicamentos">Lista de Medicamentos</Link>
             </HeaderNewMedicine>
-            <div style={{ margin: "40px" }}>
+            <div style={{ marginRight: "40px", marginLeft: "40px" }}>
                 <h4 style={{ color: "green" }}>
                     Cadastro de Medicamento
                 </h4>

@@ -108,7 +108,7 @@ margin-right: 80px;
 margin-bottom: 80px
 `
 export const HeaderNewMedicine = styled.div`
-margin-top: 50px; 
+margin-top: 40px; 
 margin-right: 100px; 
 text-align: right 
 `
