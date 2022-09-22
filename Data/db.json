@@ -53,24 +53,6 @@
       "latitude": "-27.234857",
       "longitude": "-48.639670",
       "id": 5
-    },
-    {
-      "razaoSocial": "Farmácia Blumenau",
-      "cnpj": "27.869.831/0001-50",
-      "nomeFantasia": "Blumenau farma",
-      "email": "farmaciablumenau@gmail.com",
-      "telefone": "",
-      "celular": "48991516768",
-      "cep": "89012-400",
-      "logradouro": "Rua Sete de Setembro",
-      "numero": "200",
-      "bairro": "Centro",
-      "cidade": "Blumenau",
-      "estado": "SC",
-      "complemento": "",
-      "latitude": -20.253255,
-      "longitude": -43.80783,
-      "id": 6
     }
   ],
   "usuarios": [
