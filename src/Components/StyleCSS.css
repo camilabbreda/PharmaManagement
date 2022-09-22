@@ -1,0 +1,46 @@
+
+.navBar{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+  
+   
+}
+.mainNavBar{
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 35px 
+}
+.mainNavBar a:hover {
+    color: rgb(43, 205, 6)
+}
+.logNav{
+    height: 45px;
+    margin-right:145px 
+}
+#divNav{
+    margin-right: 100px ;
+    display: flex;
+    flex-direction: row 
+}
+.p2{
+    background:rgb(238,238,238);
+    border-radius:12px;
+    text-align:center
+}
+#loginDivFora{
+    margin-top: 100px
+}
+.cabecalhoLogin{
+    text-align: center; 
+    color: #198754; 
+    font-size: 25px
+}
+#formularioLogin{
+    border: solid 1px rgb(135, 167, 155); 
+    padding-right: 25px; 
+    padding-left: 25px; 
+    padding-bottom: 50px; 
+    padding-top: 40px; 
+    border-radius: 6%
+}

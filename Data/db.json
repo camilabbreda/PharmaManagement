@@ -1,0 +1,122 @@
+{
+  "farmacias": [
+    {
+      "razaoSocial": "pouco price",
+      "cnpj": "66.336.185/0001-18",
+      "nomeFantasia": "Famácia pouco preço",
+      "email": "farmaciapoucopreco123@gmail.com",
+      "telefone": "",
+      "celular": "48991516768",
+      "cep": "70658-498",
+      "logradouro": "SHCES Quadra 1409 Bloco H",
+      "numero": "123",
+      "bairro": "Cruzeiro Novo",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "complemento": "",
+      "latitude": 33.418547,
+      "longitude": -96.731903,
+      "id": 3
+    },
+    {
+      "razaoSocial": "Farmácia Preço Popular",
+      "cnpj": "61.960.699/0001-26",
+      "nomeFantasia": "Farmácia Preço Popular",
+      "email": "precopopular567@gmail.com",
+      "telefone": "",
+      "celular": "48991516768",
+      "cep": "88062-000",
+      "logradouro": "Avenida Afonso Delambert Neto",
+      "numero": "555",
+      "bairro": "Lagoa da Conceição",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "complemento": "",
+      "latitude": -27.603648425,
+      "longitude": -48.4698318720036,
+      "id": 4
+    },
+    {
+      "razaoSocial": "Drogaria Catarinense",
+      "cnpj": "31.707.944/0001-27",
+      "nomeFantasia": "Drogaria Catarinense",
+      "email": "drogariacatarinense567@gmail.com",
+      "telefone": "",
+      "celular": "48991516768",
+      "cep": "88200-000",
+      "logradouro": "R. Delfino",
+      "numero": "150",
+      "bairro": "Centro",
+      "cidade": "Tijucas",
+      "estado": "SC",
+      "complemento": "",
+      "latitude": "-27.234857",
+      "longitude": "-48.639670",
+      "id": 5
+    },
+    {
+      "razaoSocial": "Farmácia Blumenau",
+      "cnpj": "27.869.831/0001-50",
+      "nomeFantasia": "Blumenau farma",
+      "email": "farmaciablumenau@gmail.com",
+      "telefone": "",
+      "celular": "48991516768",
+      "cep": "89012-400",
+      "logradouro": "Rua Sete de Setembro",
+      "numero": "200",
+      "bairro": "Centro",
+      "cidade": "Blumenau",
+      "estado": "SC",
+      "complemento": "",
+      "latitude": -20.253255,
+      "longitude": -43.80783,
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "username": "abc",
+      "userLastName": "Camila",
+      "userEmail": "Breda",
+      "userPassword": "1234567a"
+    }
+  ],
+  "medicamentos": [
+    {
+      "name": "Olanzapina",
+      "lab": "Silveira",
+      "dose": "20mg",
+      "category": "Medicamento Controlado",
+      "price": "102,00",
+      "details": "Medicamento utilizado no tratamento de doenças psicológicas",
+      "id": 1
+    },
+    {
+      "name": "Alprazolan",
+      "lab": "Nogueira",
+      "dose": "120mg",
+      "category": "Medicamento Controlado",
+      "price": "80,00",
+      "details": "",
+      "id": 2
+    },
+    {
+      "name": "Lotaradina",
+      "lab": "Silveira",
+      "dose": "10mg",
+      "category": "Medicamento Comum",
+      "price": "40,00",
+      "details": "",
+      "id": 3
+    },
+    {
+      "name": "Tylenol",
+      "lab": "Zira",
+      "dose": "12ml",
+      "category": "Medicamento Comum",
+      "price": "12,00",
+      "details": "",
+      "id": 4
+    }
+  ]
+}
