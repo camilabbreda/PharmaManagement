@@ -3,7 +3,8 @@ import medicamento  from '../Imagens/medicamento.png'
 import { Background, ModalContent, ModalImg, ModalWrapper } from "./Style";
 import '../Components/StyleCSS.css'
 
-
+//Referência:
+//Modal Realizado com base neste vídeo: https://www.youtube.com/watch?v=d3aI1Dt0Z50&ab_channel=BrianDesign
 
 export const Modal=({showModal, setShowModal, id, medicine})=>{
     const [medicineList, setMedicineList] = useState()
