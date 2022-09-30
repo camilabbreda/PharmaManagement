@@ -3,46 +3,54 @@ import apagarPost from "../Imagens/apagarPost.png"
 import { useState, useEffect } from "react"
 import { HeaderSearch } from "../Components/Style"
 
+// as observações nessa página são as mesmas que na página de listagem de medicamentos.
+// vou fazer correções mais sem explicar dessa vez, assim vc treina pra ver se entendeu tudo
 export default function PharmacyList() {
-
-    const [pharmacyList, setPharmacyList] = useState()
-    const [search, setSearch] = useState()
-    const [filtro, setFiltro] = useState()
+    const [pharmacyList, setPharmacyList] = useState([])
+    const [search, setSearch] = useState("")
+    const [filtro, setFiltro] = useState([])
 
     useEffect(() => {
         getPharmacy()
-    }, [pharmacyList])
+    }, [])
 
     function getPharmacy() {
         fetch("http://localhost:3001/farmacias")
             .then((response) => response.json())
             .then((data) => {
                 setPharmacyList(data);
+                setFiltro(data)
             })
     }
 
     function HandleDeletePharmacy(id) {
         if (window.confirm("Tem certeza que deseja excluir?")) {
             fetch(`http://localhost:3001/farmacias/${id}`, { method: "DELETE" })
+            .then(() => { getPharmacy() })
         }
     }
 
-    useEffect(() => {
-        if (filtro === undefined) {
-            setFiltro(pharmacyList)
-        }
-        else if (filtro.length > pharmacyList.length) {
-            setFiltro(pharmacyList)
-        }
-    }, [pharmacyList])
+    // useEffect(() => {
+    //     if (filtro === undefined) {
+    //         setFiltro(pharmacyList)
+    //     }
+    //     else if (filtro.length > pharmacyList.length) {
+    //         setFiltro(pharmacyList)
+    //     }
+    // }, [pharmacyList])
 
 
+    // useEffect(() => {
+    //     if (filtro !== undefined) {
+    //         setFiltro(pharmacyList.filter(item => {
+    //             if ((item.razaoSocial.toLocaleLowerCase()).indexOf(search.toLocaleLowerCase()) !== -1) { return item; }
+    //         }))
+    //     } else { setFiltro(pharmacyList) }
+    // }, [search])
+
     useEffect(() => {
-        if (filtro !== undefined) {
-            setFiltro(pharmacyList.filter(item => {
-                if ((item.razaoSocial.toLocaleLowerCase()).indexOf(search.toLocaleLowerCase()) !== -1) { return item; }
-            }))
-        } else { setFiltro(pharmacyList) }
+        const result = pharmacyList.filter(item => (item.razaoSocial.toLocaleLowerCase()).indexOf(search.toLocaleLowerCase()) !== -1)
+        setFiltro(result)
     }, [search])
 
     return (
@@ -76,7 +84,7 @@ export default function PharmacyList() {
                         </tr>
                     </thead>
                     <tbody style={{ fontSize: "13px" }}>
-                        {filtro !== undefined ? (
+                        {filtro.length > 0 ? (
                             filtro.map((pharmacy) => {
                                 return (
                                     <tr>
