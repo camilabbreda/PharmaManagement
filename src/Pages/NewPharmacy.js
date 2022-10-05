@@ -23,8 +23,25 @@ export default function NewPharmacy() {
         longitude: ""
     })
 
-    function HandleGenerateData(e) {
-        e.preventDefault();
+    // function HandleGenerateData(e) {
+    //     e.preventDefault();
+    //     fetch(
+    //         `https://api.mapbox.com/geocoding/v5/mapbox.places/${newPharmacy.logradouro}.json?${ACCESS_TOKEN_MAP_BOX}`
+    //     )
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             console.log({ data })
+    //             const [long, lat] = data.features[0].center;
+    //             setNewPharmacy((prev) => ({
+    //                 ...prev,
+    //                 latitude: lat,
+    //                 longitude: long,
+    //             }));
+    //         });
+    // }
+
+    // Dessa forma não é necessário ter um botão para gerar os dados de localização
+    useEffect(() => {
         fetch(
             `https://api.mapbox.com/geocoding/v5/mapbox.places/${newPharmacy.logradouro}.json?${ACCESS_TOKEN_MAP_BOX}`
         )
@@ -38,7 +55,8 @@ export default function NewPharmacy() {
                     longitude: long,
                 }));
             });
-    }
+    }, [newPharmacy.logradouro]);
+
 
     function CreateNewPharmacy(e) {
         e.preventDefault()
@@ -161,7 +179,7 @@ export default function NewPharmacy() {
                         <div className="col-12" style={{ textAlign: "center" }}>
                             <Butao type="reset" className="btn btn-success" >Limpar</Butao>
                             <Butao type="submit" className="btn btn-success" >Salvar</Butao>
-                            <button onClick={HandleGenerateData} className="btn btn-success" style={{ width: "300px" }}>Gerar Dados Geográficos</button>
+                            {/* <button onClick={HandleGenerateData} className="btn btn-success" style={{ width: "300px" }}>Gerar Dados Geográficos</button> */}
                         </div>
                     </form>
                 </FormPharmContent>

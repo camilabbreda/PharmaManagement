@@ -6,26 +6,24 @@ import '../Components/StyleCSS.css'
 //Referência:
 //Modal Realizado com base neste vídeo: https://www.youtube.com/watch?v=d3aI1Dt0Z50&ab_channel=BrianDesign
 
-export const Modal=({showModal, setShowModal, id, medicine})=>{
-    const [medicineList, setMedicineList] = useState()
+export const Modal=({showModal, setShowModal, medicine})=>{
+    // como já recebeu o medicamento, não precisa mais dessa lógica
+
+    // const [medicineList, setMedicineList] = useState()
     
-    useEffect(() => {
-        getMedicineList()
-    }, [])
+    // useEffect(() => {
+    //     getMedicineList()
+    // }, [])
 
-    function getMedicineList (){
-        fetch("http://localhost:3001/medicamentos")
-            .then((response) => response.json())
-            .then((data) => {
-                setMedicineList(data);
-            })
-    }
+    // function getMedicineList (){
+    //     fetch("http://localhost:3001/medicamentos")
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             setMedicineList(data);
+    //         })
+    // }
 
-
-
-medicine = medicineList!==undefined ? medicineList.filter(item=>item.id === id): null
-
-
+    // medicine = medicineList!==undefined ? medicineList.filter(item=>item.id === id): null
 
     return(
         <>
