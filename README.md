@@ -21,7 +21,7 @@ Para executar o Projeto é necessário ter instalado:
         "web-vitals": "^2.1.4"
       }
     }
-    ```
+```
     
 O Projeto Trabalha com JSON SERVER que deve ser executado com o comando:
 npm run server
